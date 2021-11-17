@@ -1,0 +1,11 @@
+def has_duplicates(s):
+    a = []
+    for i in s:
+        a.append(i)
+    
+    a = sorted(a)
+    num = 0
+    for i in range(len(a)-1):
+        if a[i] == a[i+1]:
+            num += 1 
+    return num > 0
