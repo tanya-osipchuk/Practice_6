@@ -1,0 +1,7 @@
+def nested_sum (t):
+    summa = 0
+    for i in range (len(t)):
+        a = t[i]
+        b = sum (a)
+        summa += b
+    return summa
